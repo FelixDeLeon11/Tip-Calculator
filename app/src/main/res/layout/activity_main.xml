@@ -4,20 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="--"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Tip"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="180dp"
+        android:text="Tip Percent"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/numPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@android:color/white"
+        tools:text="Percent#" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderPercent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/input_amount">
+        android:layout_below="@id/textView8"
+        android:layout_marginTop="45dp"
+        android:stepSize="1"
+        android:value="15"
+        android:valueFrom="1"
+        android:valueTo="30" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/temp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:inputType="numberSigned" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderPercent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="45dp"
+        android:text="Number of People"
+        android:textColor="@android:color/white" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/numPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderPercent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@android:color/white"
+        tools:text="People#" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numPeople"
+        android:layout_marginTop="45dp"
+        android:stepSize="1"
+        android:value="5"
+        android:valueFrom="1"
+        android:valueTo="10" />
+
+    <EditText
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/almost_black"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Bill"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
 
 </RelativeLayout>
