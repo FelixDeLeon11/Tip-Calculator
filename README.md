@@ -1,6 +1,6 @@
 # **Tip-Calculator**
 
-**Tip-Calculator** is an android app that allows a user to calculate tip per person based on number of people in the party and tip percent.
+**Tip-Calculator** is a simple android app that allows a user to calculate tip per person based on number of people in the party and tip percent.
 
 ## Video Walkthrough
 
